@@ -1,0 +1,12 @@
+[Sun, 08 Apr 18 09:41:11 +0700][ERROR] [0]: Parameter 'name' must be a string
+
+[Sun, 08 Apr 18 12:10:57 +0700][ERROR] [2019]: SQLSTATE[HY000] [2019] Unknown character set
+
+[Sun, 08 Apr 18 20:57:04 +0700][ERROR] [0]: The method 'prepare' doesn't exist on model 'Event'
+
+[Sun, 08 Apr 18 20:57:08 +0700][ERROR] [0]: The method 'prepare' doesn't exist on model 'Event'
+
+[Sun, 08 Apr 18 20:57:48 +0700][ERROR] [0]: The method 'prepare' doesn't exist on model 'Event'
+
+[Sun, 08 Apr 18 20:58:46 +0700][ERROR] [0]: The method 'prepare' doesn't exist on model 'Event'
+

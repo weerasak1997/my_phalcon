@@ -1,0 +1,87 @@
+<head>
+    <meta charset="utf-8">
+    <?php echo $this->assets->outputJs('scripts'); ?> 
+    </head>
+  <body>
+   <div class="container container-form">
+      <div class="panel panel-primary">
+        <div class="panel-body">
+          <form method="post" action="" enctype="multipart/form-data" >
+
+            <div class="form-group">
+              <div class="row">
+                <div class="pull-left">
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label> ชื่อกิจกรรม </label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <input type="text" name="even_name" class="form-control" placeholder="ชื่อกิจกรรม" id="even_name" value="<?php echo $edit->event_name;?>" required>
+              </div>
+            </div>
+            <div class="form-group">
+               <div class="row">
+                <div class="pull-left">
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label> วันที่ </label>
+                </div>
+              </div>
+              <html>
+                <head>
+                    <meta charset="utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/gijgo.min.js" type="text/javascript"></script>
+                    <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+                </head>
+                <body>
+                   <div class="col-sm-6">
+                    <input name="datepicker" id="datepicker" width="280" placeholder="mm/dd/yyyy" value="<?php echo $edit->event_date;?>" required>
+                    <br>
+                  </dir>
+                    <script>
+                        $('#datepicker').datepicker({
+                             minDate: new Date(2017, 11, 31+1),
+                            maxDate: new Date(2020, 0, 0),
+                        });
+                    </script>
+                </body>
+                </html>
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <div class="pull-left">
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label> รายละเอียด </label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <textarea type="text" name="detail_name" rows="4" class="form-control" placeholder="รายละเอียดกิจกรรม" id="detail_name"  required><?php echo $edit->event_detail;?></textarea>
+              </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="pull-left">
+                <div class="row">
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label> ภาพกิจกรรม </label> 
+                </div> 
+                <br><br>
+              <div class="pull-left">
+                 <img style="width:300px; height:300px" src="<?php echo $this->url->getBaseUri().'public/img/event/'.$edit->event_picture ?> "><hr>
+              </div> 
+                <div class="col-sm-6">
+                 <dir class="custom-file">
+                <input type="file" name="event_picture"  class="custom-file-input"  >
+                  <label class="custom-file-label" >Choose file</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div  class="col-sm-6">
+                <button type="submit" class="btn btn-success"> Submit </button>
+                <a href="notlogin" class="btn btn-warning">Back</a>
+              </div>
+            </div>
+          </form>
+  </div>
+</div>
+</div>
