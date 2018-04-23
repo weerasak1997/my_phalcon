@@ -7,8 +7,8 @@
 // $objCon = mysqli_connect('localhost','root','','event_db');
 // mysqli_set_charset($objCon, "utf8");
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "jame25193";
+$password = "D1870B4A";
  
 try{
     // $pdo = new PDO("mysql:host=" . DB_SERVER . ";dbname=" .  DB_NAME, DB_USERNAME, DB_PASSWORD);
